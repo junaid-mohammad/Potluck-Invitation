@@ -39,4 +39,4 @@ If you'd like to contribute to this project, please fork the repository and subm
 
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for more details.
+This project is open-source and you're free to re-use it!
