@@ -1,131 +1,129 @@
-/* Reset default margin and padding for all elements */
+/* Basic Reset: Ensures consistent box sizing and removes default margins */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* Ensure consistent box sizing */
+  box-sizing: border-box;
 }
 
-/* Main body styles */
+/* Main body styling: Sets font, alignment, and background */
 body {
-  font-family: "Poppins", sans-serif; /* Set font family */
-  background-color: #EEEEEE; /* Light background color */
-  color: #3B1E54; /* Main text color */
+  font-family: "Poppins", sans-serif;
+  background-color: #EEEEEE;
+  color: #3B1E54;
   display: flex;
-  flex-direction: column; /* Stack children vertically */
-  align-items: center; /* Center align items */
-  padding: 20px; /* Add padding around the body */
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
 
-/* Header styles */
+/* Header section with centered main title and subtitle */
 header {
-  text-align: center; /* Center text in header */
-  margin-bottom: 20px; /* Space below header */
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 header h1 {
-  font-size: 2.5rem; /* Main title size */
-  color: #9B7EBD; /* Title color */
+  font-size: 2.5rem;
+  color: #9B7EBD;
 }
 
 header p {
-  font-size: 1.2rem; /* Subheading size */
-  color: #3B1E54; /* Subheading color */
-  margin-top: 10px; /* Space above subheading */
+  font-size: 1.2rem;
+  color: #3B1E54;
+  margin-top: 10px;
 }
 
-/* Event details, about section, group picture, and guests */
+/* Section Styling: Event, about, group, and guests with responsive width */
 .event-details, .about-pritika, .group-picture, .guests {
-  width: 80%; /* Responsive width */
-  max-width: 800px; /* Limit max width */
-  margin-bottom: 30px; /* Space below sections */
-  background-color: #D4BEE4; /* Section background color */
-  padding: 20px; /* Padding inside sections */
-  border-radius: 8px; /* Rounded corners */
+  width: 80%;
+  max-width: 800px;
+  margin-bottom: 30px;
+  background-color: #D4BEE4;
+  padding: 20px;
+  border-radius: 8px;
 }
 
+/* Headings and links styling within sections */
 h2 {
-  font-size: 2rem; /* Heading size */
-  color: #3B1E54; /* Heading color */
-  margin-bottom: 10px; /* Space below heading */
+  font-size: 2rem;
+  color: #3B1E54;
+  margin-bottom: 10px;
 }
 
 p a {
-  font-size: 1rem; /* Link font size */
-  color: #3B1E54; /* Link color */
-  margin-bottom: 10px; /* Space below link */
+  font-size: 1rem;
+  color: #3B1E54;
+  margin-bottom: 10px;
 }
 
-/* Image styles for about section and group picture */
+/* Image styling for about section and group pictures */
 .about-pritika img, .group-picture img {
-  width: 100%; /* Full width images */
-  height: auto; /* Maintain aspect ratio */
-  max-width: 800px; /* Limit max width */
-  margin-top: 15px; /* Space above images */
-  border-radius: 8px; /* Rounded corners */
-  border: 2px solid #9B7EBD; /* Border around images */
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  margin-top: 15px;
+  border-radius: 8px;
+  border: 2px solid #9B7EBD;
 }
 
-/* Guest list styling */
+/* Guests section styling: Flexbox layout with responsive guest items */
 .guests {
-  display: flex; /* Use flexbox for layout */
-  flex-wrap: wrap; /* Wrap guests to new lines as needed */
-  gap: 20px; /* Space between guest items */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .guest {
-  width: calc(33.333% - 20px); /* 3 per row, accounting for gap */
-  text-align: center; /* Center align text */
-  background-color: #EEEEEE; /* Guest background color */
-  padding: 10px; /* Padding inside guest box */
-  border-radius: 8px; /* Rounded corners */
-  border: 1px solid #D4BEE4; /* Border around guest box */
+  width: calc(33.333% - 20px);
+  text-align: center;
+  background-color: #EEEEEE;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #D4BEE4;
 }
 
+/* Circular images for guests with border */
 .guest img {
-  width: 100%; /* Full width for guest images */
-  height: 60%; /* Fixed height for images */
-  border-radius: 50%; /* Circular images */
-  margin-bottom: 10px; /* Space below images */
-  border: 2px solid #9B7EBD; /* Border around images */
+  width: 100%;
+  height: 60%;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 2px solid #9B7EBD;
 }
 
-/* Footer styles */
+/* Footer section styling with links */
 footer {
-  text-align: center; /* Center text in footer */
-  margin-top: 20px; /* Space above footer */
-  font-size: 0.9rem; /* Footer text size */
-  color: #9B7EBD; /* Footer text color */
-}
-
-footer p {
-  color: #9B7EBD; /* Color for footer paragraph */
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #9B7EBD;
 }
 
 footer p a {
-  color: #D4BEE4; /* Link color in footer */
-  text-decoration: none; /* Remove underline from links */
-  font-weight: bold; /* Bold links */
+  color: #D4BEE4;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 footer p a:hover {
-  color: #9B7EBD; /* Change link color on hover */
+  color: #9B7EBD;
 }
 
-/* Media Queries for responsive design */
+/* Media Queries: Adjusts layout for smaller screens */
 @media (max-width: 680px) {
   header h1 {
-    font-size: 2rem; /* Smaller header size on mobile */
+    font-size: 2rem;
   }
 
   .guests {
-    flex-direction: column; /* Stack guests vertically on mobile */
+    flex-direction: column; /* Stack guests vertically */
   }
 
   .guest {
-    width: 100%; /* Full width for guest boxes on mobile */
+    width: 100%; /* Full-width guest items on mobile */
   }
 
   h2 {
-    font-size: 1.5rem; /* Smaller heading size on mobile */
+    font-size: 1.5rem; /* Smaller heading on mobile */
   }
 }
